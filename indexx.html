@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemdina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--Header Section-->
+  <header>
+
+    <nav class="navbar navbar-expand-lg fixed-top ">
+      <div class="container-fluid">
+        <img src="Assets/logo/logo-lemdina-1.png" alt="" width="50px" class="me-auto">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+
+            <img src="Assets/logo/logo-lemdina.png" alt="" width="25px">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link  mx-lg-2 active" aria-current="page" href="# " onclick="showSection('home')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#" onclick="showSection('gallery')">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#" onclick="showSection('menu')">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#" onclick="showSection('contact')">Contact</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+        <a href="#" id="btn" class="py-2 px-4 rounded-2 mx-3 fs text-white text-decoration-none "
+          onclick="booking()">Book a
+          table</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="content">
+    <!--Home Page Section-->
+    <div id="home-section">
+      <div class="container text-center text-white d-flex-row justify-content-center">
+        <!--About-->
+        <div class="row d-flex justify-content-center">
+          <div id="about" class="col-md-8    p-5  ">
+            <section>
+              <span class="h1">ELMDINA</span>
+              <p id="sous_titre">Restaurant Gastronomique - Tunis</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus illo dolorum saepe
+                unde et, sit tempore, vel sed eius sunt optio totam vero consectetur adipisci quas nobis
+                tempora ipsa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, debitis nulla
+                fuga laudantium sunt quam neque sequi dignissimos? Accusantium enim voluptates esse
+                recusandae ducimus nesciunt, eius amet maxime eos nemo!</p>
+            </section>
+          </div>
+        </div>
+        <div class=" d-flex  justify-content-center ml-5 ">
+          
+            <div class="row col-md-9">
+              <!--Info-->
+              <div id="info" class=" col-md-5  ml-5 p-4">
+
+                <span>Info pratique</span>
+                <div>
+                  <span class="sous_titre">Cuisine</span>
+                  <p>Meditérranéenne , Française, Internationale</p>
+                </div>
+                <div>
+                  <span class="sous_titre">Type de restaurant</span>
+                  <p>Restaurant Gastronomique</p>
+                </div>
+                <div>
+                  <span class="sous_titre">Services</span>
+                  <p>Accès wifi gratuit</p>
+                </div>
+                <div>
+                  <span class="sous_titre">Moyens de paiement</span>
+                  <p>Bon de commande, Chèques, Eurocard/Mastercard, Espèces, Visa, Carte Bleue</p>
+                </div>
+              </div>
+              <!--Horaire-->
+              <div id="horaire" class="col-md-5    p-4 ">
+
+                <span>Horaire </span>
+                <div class="d-flex justify-content-between border-bottom border-light mb-3">
+                  <p class="">Lun-Ven</p>
+                  <p>8AM-8PM</p>
+                </div>
+                <div class="d-flex justify-content-between border-bottom border-light mb-3">
+                  <p>Samedi</p>
+                  <p>8AM-10PM</p>
+                </div>
+                <div class="d-flex justify-content-between border-bottom border-light mb-3">
+                  <p>Dimanche</p>
+                  <p>10AM-11PM</p>
+                </div>
+                <p class="text-center"> Uniquement sur réservation</p>
+
+              </div>
+            </div>
+          
+        </div>
+        <!--adress-->
+        <div class="row d-flex justify-content-center">
+          <div id="adress" class="col-md-8    p-5 ">
+            <span>Adress</span>
+            <p>1 Les Berges du Lac A coté de l'hôtel Acropole, Tunis 1059 Tunisie</p>
+            <p>+216 55 113 333</p>
+            <div>
+              <a href=""> <i class="bi bi-facebook"></i></a>
+              <a href=""> <i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--newsletter-->
+        <div class="row d-flex justify-content-center">
+          <div id="about" class="col-md-8    p-5 ">
+            <span>Newsletter</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem impedit cumque obcaecati animi magni eos
+              ratione expedita soluta necessitatibus minima iure, facilis debitis alias. Ad eaque at possimus cupiditate
+              dicta.</p>
+            <button id="btn">Send</button>
+          </div>
+        </div>
+      </div>
+      <!--carsousel-->
+      <div id="carouselExampleAutoplaying" class="carousel slide pb-3" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="Assets/restaurant/img3.jpg" class="d-block mx-auto" width="1000px" height="550px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Assets/restaurant/img4.jpg" class="d-block mx-auto" width="1000px" height="550px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Assets/food/img5.jpg" class="d-block mx-auto" width="1000px" height="550px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Gallery Section -->
+    <div id="gallery-section" class="d-none text-center">
+      <span class=" h1 color-white">Gallery</span>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div id="gallery" class="col-md-10 p-3">
+          <div>
+            <!-- Restaurant -->
+            <span class="h2 title">Restaurant</span>
+            <div class="gallery container mt-5 ">
+              <div class="row justify-content-center ">
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container ">
+                  <img src="Assets/restaurant/img1.jpg" alt="Image 1" id>
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container">
+                  <img src="Assets/restaurant/img2.jpg" alt="Image 2">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container">
+                  <img src="Assets/restaurant/img3.jpg" alt="Image 3">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container">
+                  <img src="Assets/restaurant/img4.jpg" alt="Image 4">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container">
+                  <img src="Assets/restaurant/img5.jpg" alt="Image 5">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container">
+                  <img src="Assets/restaurant/img6.jpg" alt="Image 6">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3image-container">
+                  <img src="Assets/restaurant/img7.jpg" alt="Image 7">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container">
+                  <img src="Assets/restaurant/img8.jpg" alt="Image 8">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  mb-3 image-container">
+                  <img src="Assets/restaurant/img9.jpg" alt="Image 9">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- Nos plats -->
+            <span class="h2 title">Nos plats</span>
+            <div class="gallery container mt-5">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6   col-lg-4 mb-3  mb-3  image-container">
+                  <img src="Assets/food/img7.jpg" alt="Image 1">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img6.jpg" alt="Image 2">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img4.jpg" alt="Image 3">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img5.jpg" alt="Image 4">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img9.jpg" alt="Image 5">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img8.jpg" alt="Image 6">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img10.jpg" alt="Image 7">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img2.jpg" alt="Image 8">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 mb-3  image-container">
+                  <img src="Assets/food/img11.jpg" alt="Image 9">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Menu section-->
+    <div id="menu-section" class="container d-none d-flex flex-column justify-content-center">
+      <div class="d-lg-flex justify-content-between  flex-md-row mt-5 text-white font-weight-bold">
+        <!-- Filter List -->
+        <div id="menu_filter" class="filter-list p-4  position-sticky col-md-10 col-lg-3 h-25">
+          <ul class=" list-unstyled border border-white d-flex flex-md-row flex-lg-column justify-content-between ">
+            <li class=" border-bottom border-white px-2 py-2  active " onclick="filterMenu('all') ">All</li>
+            <li class=" border-bottom border-white px-2 py-2" onclick="filterMenu('entrees')">Les Entrées</li>
+            <li class="border-bottom border-white px-2 py-2" onclick="filterMenu('poissons')">Les Poissons</li>
+            <li class="px-2 py-2" onclick="filterMenu('viandes')">Les Viandes</li>
+          </ul>
+        </div>
+        <div class="col-lg-8 col-md-10">
+
+          <!-- Menu Items -->
+
+          <div id="menu-items"  width="">
+            <div id="#menu_cont" class="border border-white m-4 p-4 ">
+              <div class="text-center">
+                <h1 class="text-center  title">Menu</h1>
+                <img src="Assets/logo/logo-lemdina-1.png" alt="" width="50px">
+              </div>
+              <!-- Les entrées -->
+              <div class="menu-section  " data-category="entrees">
+                <h3 class="title">Les Entrées</h3>
+                <div class="menu-item d-flex justify-content-between  py-2 ">
+                  <span class="menu-title font-weight-bold font-weight-bold">Céviche de filets de Daurade aux
+                    agrumes</span>
+                  <span class="menu-price">45,00DT</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2 ">
+                  <span class="menu-title font-weight-bold">Friture de Calamars à la coriandre</span>
+                  <span class="menu-price">47,00 TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Choux farcis aux crevettes sauce safranée</span>
+                  <span class="menu-price">38,00 TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Charlotte d'Aubergine aux foies de volailles</span>
+                  <span class="menu-price">36,00 TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Avocat aux crevettes sauce cocktail maison</span>
+                  <span class="menu-price">46,00 TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Salade Madeleine "Betteraves, pommes et pignons"</span>
+                  <span class="menu-price">35,00 TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Pâtes fraiches à la marina</span>
+                  <span class="menu-price">49,00 TND</span>
+                </div>
+              </div>
+
+              <!-- lES poissons -->
+              <div class="menu-section  " data-category="poissons">
+                <h3 class="title">Les Poissons</h3>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Tournedos de Lotte sauce Roquefort et noix</span>
+                  <span class="menu-price">67,00TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Fricassée de Crevettes au gingembre </span>
+                  <span class="menu-price">69,00TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Blanc de Saint pierre au beurre de crevettes carottes
+                    confites</span>
+                  <span class="menu-price">65,00TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Filets de Loup aux petits farcis sauce onctueuse au
+                    safran</span>
+                  <span class="menu-price">79,00TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Curry de Mérou au Chutney de mangue</span>
+                  <span class="menu-price">67,00TND</span>
+                </div>
+              </div>
+
+              <!-- les viandes -->
+              <div class="menu-section  " data-category="viandes">
+                <h3 class="title">Les Viandes</h3>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Lapin de ferme à la moutarde à l’ancienne</span>
+                  <span class="menu-price">63,00 TND
+                  </span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Chateaubriand à la crème d’épices</span>
+                  <span class="menu-price">73,00TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Gigot d'Agneau à la crème d'ail pommes sautées et jardinière
+                    de
+                    légumes</span>
+                  <span class="menu-price">68,00TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Canard de Pékin rôti au poivre vert et ananas</span>
+                  <span class="menu-price">77,00TND</span>
+                </div>
+                <div class="menu-item d-flex justify-content-between  py-2">
+                  <span class="menu-title font-weight-bold">Langue de veau sauce câpres et cornichons </span>
+                  <span class="menu-price">60,00TND</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact-section" class="d-none">
+      <div class="container text-center text-white d-flex align-items-center justify-content-center ">
+        <div class="row  d-flex justify-content-center">
+          <div id="contact" class="col-md-8 p-5 ">
+            <form class="row needs-validation" novalidate>
+              <p class="h2">Vous désirez nous contacter ?</p>
+              <p class="h2">Remplissez le formulaire ci-dessous !</p>
+              <!-- Prénom -->
+              <div class="col-md-6 pb-2">
+                <input type="text" class="form-control" id="validationName" placeholder="Prénom" required>
+                <div class="invalid-feedback">
+                  Merci d'indiquer votre prénom.
+                </div>
+              </div>
+              <!-- Nom -->
+              <div class="col-md-6 pb-2">
+
+                <input type="text" class="form-control" id="validationLastName" placeholder="Nom" required>
+                <div class="invalid-feedback">
+                  Merci d'indiquer votre nom.
+                </div>
+              </div>
+
+              <div class="col-md-6 pb-2">
+                <!-- Email -->
+                <input type="email" class="form-control" id="validationMail" placeholder="votre adresse email" required>
+                <div class="invalid-feedback">
+                  Merci d'indiquer votre email.
+                </div>
+              </div>
+
+              <div class="col-md-6 pb-2">
+                <!-- Téléphone -->
+                <input type="number" class="form-control" id="validationPhone" required placeholder="Téléphone">
+                <div class="invalid-feedback">
+                  Merci d'indiquer votre téléphone.
+                </div>
+              </div>
+
+              <div class="mb-3 col-12 pb-2">
+                <!-- Message -->
+                <textarea class="form-control" id="validationTextarea" placeholder="Message" required></textarea>
+                <div class="invalid-feedback">
+                  Merci d'indiquer votre message.
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-primary col-12 " id="btn" type="submit">Envoyer</button>
+              </div>
+            </form>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3797.5151265007794!2d10.239056817422968!3d36.834886835502154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd3541b20a0323%3A0xdb3ea63b9c2b9f95!2sLemdina!5e0!3m2!1sfr!2stn!4v1730376861914!5m2!1sfr!2stn"
+                class="col-12 mt-3" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+          <div class="row col-md-8 justify-content-between  ">
+            <!--Horaire-->
+            <div id="horaire" class="col-md-5    p-4 ">
+
+              <span>Horaire </span>
+              <div class="d-flex justify-content-between border-bottom border-light mb-3">
+                <p class="">Lun-Ven</p>
+                <p>8AM-8PM</p>
+              </div>
+              <div class="d-flex justify-content-between border-bottom border-light mb-3">
+                <p>Samedi</p>
+                <p>8AM-10PM</p>
+              </div>
+              <div class="d-flex justify-content-between border-bottom border-light mb-3">
+                <p>Dimanche</p>
+                <p>10AM-11PM</p>
+              </div>
+              <p class="text-center"> Uniquement sur réservation</p>
+
+            </div>
+            <div id="adress" class="col-md-5    p-5 ">
+              <span>Adress</span>
+              <p>1 Les Berges du Lac A coté de l'hôtel Acropole, Tunis 1059 Tunisie</p>
+              <p>+216 55 113 333</p>
+              <div>
+                <a href=""> <i class="bi bi-facebook"></i></a>
+                <a href=""> <i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="booking-section" class=" d-none col-6 col-md-3 position-fixed bottom-0 end-0 m-3">
+      <i class="bi bi-x"></i>
+
+      <!-- Couverte -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#couverte"
+              aria-expanded="false" aria-controls="couverte" id="couverteButton">
+              <i class="fas fa-utensils"></i> Couverte
+            </button>
+          </h5>
+        </div>
+        <div id="couverte" class="collapse" aria-labelledby="headingOne" data-bs-parent="#booking-section">
+          <div class="card-body">
+            <div>
+              <div>
+                <span class="couvert-option" data-couvert="1">1</span>
+                <span class="couvert-option" data-couvert="2">2</span>
+                <span class="couvert-option" data-couvert="3">3</span>
+                <span class="couvert-option" data-couvert="4">4</span>
+                <span class="couvert-option" data-couvert="5">5</span>
+              </div>
+              <div class="mt-5">
+                <span class="couvert-option" data-couvert="6">6</span>
+                <span class="couvert-option" data-couvert="7">7</span>
+                <span class="couvert-option" data-couvert="8">8</span>
+                <span class="couvert-option" data-couvert="9">9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Date -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#date"
+              aria-expanded="false" aria-controls="date" id="dateButton">
+              <i class="fas fa-calendar-alt"></i> Date
+            </button>
+          </h5>
+        </div>
+        <div id="date" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#booking-section">
+          <div class="card-body">
+            <input type="date" id="dateInput" min="">
+          </div>
+        </div>
+      </div>
+  
+      <!-- Time -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#time"
+              aria-expanded="false" aria-controls="time" id="timeButton">
+              <i class="fas fa-clock"></i> Time
+            </button>
+          </h5>
+        </div>
+        <div id="time" class="collapse" aria-labelledby="headingThree" data-bs-parent="#booking-section">
+          <div class="card-body">
+            <div>
+              <button id="lunchButton">Lunch</button>
+              <button id="dinerButton">Dinner</button>
+            </div>
+            <input type="time" id="timeInput">
+            <div id="timeErrorMessage" class="text-danger" style="display:none;">
+              <small>Time must be between 11:00 and 17:00 for Lunch, or between 18:00 and 24:00 for Dinner.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <button id="btn" onclick="infoContact()">Reserve</button>
+    </div>
+  <!--Info contact-->
+  <div class="col-md-6 d-none position-fixed bottom-0 end-0  bg-white pt-5 px-5 " id="infoContact">
+    <div class=" d-flex justify-content-between">
+      <i class="bi bi-arrow-left-short"> Contact</i>
+      <i class="bi bi-x"></i>
+    </div>
+    
+      
+    <form class="row needs-validation" novalidate>
+      <label for="genre">Civilité</label>
+      <div class="row">
+        <div class="d-flex">
+        <div class="custom-control custom-radio">
+          <input type="radio" class="genre" id="mme" name="radio-stacked" required>
+          <label  for="mme">Madame</label>
+        </div>
+        <div class="custom-control custom-radio mb-3">
+          <input type="radio" class="genre" id="m" name="radio-stacked" required>
+          <label  for="m">Monsieur</label>
+        </div>
+      </div>
+   
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Prenom</label>
+          <input type="text" class="form-control  form-control-sm " id="lastName"required>
+          
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="Name">Nom</label>
+          <input type="text" class="form-control  form-control-sm" id="Name"  required>
+          
+        </div>
+       
+      
+      
+        <div class="col-md-6 mb-3">
+          <label for="phone">Télèphone</label>
+          <input type="number" class="form-control  form-control-sm " id="phone" required>
+          
+        </div> <div class="col-md-6 mb-3">
+          <label for="mail">Email</label>
+          <input type="email" class="form-control   form-control-sm" id="mail" required>
+          
+        
+        
+        </div>
+       <div class="mb-3 col-12 pb-2">
+          <label for="cmntr">
+            Commentaires, préférences ou restrictions alimentaires <span>(facultatif)</span>
+            </label>
+          <textarea class="col-12" id="cmntr"  ></textarea>
+         
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input " type="checkbox" value="" id="invalidCheck3" required>
+          <label class="form-check-label" for="invalidCheck3">
+           J'accepte les conditions générales d'utilisation du service.  
+          </label>
+         
+        </div>
+      </div>
+      <button id="btn" type="submit">Submit form</button>
+    </form>
+  
+  
+    </div>
+  
+  
+  
+  
+  </div>
+  </div>
+
+  <footer class="d-md-flex justify-content-between align-items-center px-3">
+    <div>
+      <span>
+        © Copyright le medina . All Rights Reserved
+      </span>
+    </div>
+    <div>
+      <img src="Assets/logo/logo-lemdina-1.png" width="70px" alt="" class="d-none d-md-block p-3">
+    </div>
+    <div>
+      <ul class="list-inline pt-3 ">
+        <li class="list-inline-item">Mentions légales </li>
+        <li class="list-inline-item">politique de confidentialité</li>
+        <li class="list-inline-item">Politique de cookies</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+<script src="index.js"></script> 
+</body>
+
+</html>
