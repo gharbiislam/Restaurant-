@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Inter', 'sans-serif';
+}
+
+h1{
+    @apply text-h1 text-black;
+}
+h2{
+    @apply text-h2 text-white_60;
+}
+h3 {
+    @apply text-h3 text-black;
+}
+h4 {
+    @apply text-h4 text-black;
+}
+h5 {
+    @apply text-h5 text-black;
+}
+
+.logo_black{
+    @apply text-black text-logo uppercase italic
+} 
+.logo_white{
+    @apply text-white text-logo uppercase italic
+}
+
+.web a{
+    @apply text-black text-body   hover:[word-spacing:-0.3rem]
+}
+.mobile a{
+    @apply text-black text-h4 hover:[word-spacing:-0.3rem]
+}
+
+footer a{
+     @apply  text-body   hover:[word-spacing:-0.3rem] text-white_60 hover:text-white
+}
+.msg_black{
+    @apply text-bubble rounded-3xl py-3 px-5 text-bg_white bg-black w-[383px]
+}
+.msg_white{
+    @apply text-bubble rounded-3xl py-3 px-5 bg-bg_white w-[383px]
+}
+.number_card{
+    @apply bg-[url('../src/assets/img/sky.png')] bg-repeat object-none px-10 pb-9 content-center rounded-2xl
+}
+.pill {
+  @apply text-h4-md lg:text-h4 py-3 px-6 bg-bg_white rounded-full text-center ;
+}
+
+.bounce {
+  @apply animate-bounce;
+}
+.card{
+    @apply flex flex-col gap-10 p-10 border border-white_20 rounded-2xl items-center justify-center
+}
+.badge{
+    @apply py-2 px-4  rounded-full bg-black_5 text-body
+}
